@@ -1,0 +1,7 @@
+@import "tailwindcss";
+
+/* Tema y tokens de diseño (centralizado) */
+@import "./styles/theme.css";
+
+/* Base: body, html, enlaces, focus */
+@import "./styles/base.css";

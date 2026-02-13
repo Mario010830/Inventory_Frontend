@@ -1,0 +1,27 @@
+/*
+ ------- Estilos base globales (fuentes, reset suave, body). 
+ */
+
+@layer base {
+  html {
+    @apply antialiased;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+
+  body {
+    @apply min-h-screen bg-neutral-50 text-neutral-900 font-sans dark:bg-neutral-900 dark:text-neutral-100;
+  }
+
+  a {
+    @apply text-primary-600 hover:text-primary-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 dark:text-primary-400 dark:hover:text-primary-300 dark:focus-visible:ring-primary-400;
+  }
+
+  :focus-visible {
+    @apply outline-none ring-2 ring-primary-500 ring-offset-2 dark:ring-offset-neutral-900 dark:ring-primary-400;
+  }
+ 
+  .password-field input[type="password"]::-ms-reveal,
+  .password-field input[type="password"]::-ms-clear {
+    display: none;
+  }
+}
